@@ -12,11 +12,16 @@ cameoNet ist offen für die leichte Einbindung von externen Kontakten (per Mail 
 ### Source Code ###
 
 Der vollständige Source Code steht bei github zur Verfügung:
-https://github.com/memoConnect
+
+<https://github.com/memoConnect>
+
 Der Source Code des cameoNet Server ist in folgendem Repository zu finden:
-https://github.com/memoConnect/cameoServer
+
+<https://github.com/memoConnect/cameoServer>
+
 Der Source Code des cameoNet Client ist in folgendem Repository zu finden:
-https://github.com/memoConnect/cameoJSClient
+
+<https://github.com/memoConnect/cameoJSClient>
 
 ## Transport Encryption ##
 
