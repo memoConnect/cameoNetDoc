@@ -113,7 +113,11 @@ After two indentities have verified their keys they can communication with the h
 
 # Random Numbers
 
-@TODO 
+Zufallszahlen werden im Client erzeugt. Dieses erfolgt immer mit der besten zur Verfügung stehenden Methode. Bei der Auswahl des Zufallszahlengenerators wirde diese Reihenfolge eingehalten:
+
+ 1. window.crypto.getRandomValue: vom Browser zur Verfügung gestellter Zufallszahlengenerator. Implementation abhängig von Browser und Betriebssystem. Aktuell wird die Qualität als ausreichend eingeschätzt.
+ 1. Zufallszahlengenerator der sjcl. Die Entropie wird ab Start der App aus Nutzereingaben, DOM-Elementen und Uhrzeit gesammelt. 
+    1. Wenn nicht genug Entropie vorhanden ist (in der Realität eher selten), wird Math.random verwendet. Die Qualität ist den seltenden Fällen schlecht. 
 
 # Key Storage
 
